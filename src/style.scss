@@ -1,0 +1,195 @@
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.hero {
+  background-image: url("./assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+}
+
+.trippro {
+  color: #2dc4ea;
+}
+
+.trippro-border {
+  border-bottom: 3px solid #2dc4ea;
+}
+.vertical-divider {
+  border: solid #fff 0.1rem;
+  margin-top: -2px !important;
+}
+
+.switch {
+  position: relative;
+  width: 150px;
+  height: 40px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent linear-gradient(270deg, #3ae7ab 0%, #2dc4ea 100%) 0%
+    0% no-repeat padding-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(110px);
+  -ms-transform: translateX(110px);
+  transform: translateX(110px);
+}
+
+.on {
+  display: none;
+}
+
+.on,
+.off {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider .on {
+  display: block;
+}
+
+input:checked + .slider .off {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.ms-8 {
+  margin-left: 8rem;
+}
+
+.pt-8 {
+  padding-top: 10rem;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("./assets/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-logo {
+  display: block;
+  max-height: 90px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.top-to-button {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.show-chat {
+  background-color: green;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.accordion-button {
+  padding: 0.4rem 1rem;
+  box-shadow: 0px 1px 3px #0000004d;
+  border-radius: 2px;
+  .text-number {
+    color: #2dc4ea;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background: transparent linear-gradient(90deg, #2dc4ea 0%, #3ae7ab 100%) 0% 0%
+    no-repeat padding-box;
+  .title {
+    color: white !important;
+  }
+  .text-number {
+    color: white;
+  }
+}
+.accordion-button::after,
+.accordion-button:not(.notcollapsed)::after {
+  background-image: none;
+}
+
+.btn-info {
+  background: transparent linear-gradient(270deg, #3ae7ab 0%, #2dc4ea 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 50px;
+}
+
+.bg-info {
+  background: transparent linear-gradient(113deg, #3ae7ab 0%, #2dc4ea 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.btn-primary {
+  background-color: #4fb9ff;
+}
